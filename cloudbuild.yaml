@@ -4,12 +4,12 @@ steps:
   args: [
     'build', 
     '-t', 
-    'gcr.io/$PROJECT_ID/kata_react', 
+    'gcr.io/$PROJECT_ID/kata-react', 
     '.'
     ]
   # push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/kata_react']
+  args: ['push', 'gcr.io/$PROJECT_ID/kata-react']
   # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
   args: [
@@ -17,9 +17,9 @@ steps:
     'run',
     'deploy',
     '--allow-unauthenticated',
-    'kata_react',
+    'kata-react',
     '--image',
-    'gcr.io/$PROJECT_ID/kata_react',
+    'gcr.io/$PROJECT_ID/kata-react',
     '--region',
     'europe-west1',
     '--platform',
@@ -28,4 +28,4 @@ steps:
     '256Mi'
     ]
 images:
-- gcr.io/$PROJECT_ID/kata_react
+- gcr.io/$PROJECT_ID/kata-react
