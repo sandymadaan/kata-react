@@ -4,6 +4,7 @@ import Dashboard from './Dashboard';
 import Home from './Home';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
+import Joke from './Joke';
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
             <Route exact path={"/dashboard"} component={Dashboard} />
             <Route exact path={"/login"} component={Login} />
             <Route exact path={"/register"} component={Register} />
-
+            <Route exact path={"/jokes"} component={Joke} />
             }
           </Switch>
         </BrowserRouter>

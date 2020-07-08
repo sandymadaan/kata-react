@@ -13,11 +13,11 @@ const Home = () => {
                         Have much fun using it
                     </p>
                     <br />
-                    <a href="/register" class="no-underline hover:underline text-blue-500 text-lg">Register
+                    <a href="/register" className="no-underline hover:underline text-blue-500 text-lg">Register
                     </a><br />
 
 
-                    <a href="/login" class="no-underline hover:underline text-blue-500 text-lg">Login
+                    <a href="/login" className="no-underline hover:underline text-blue-500 text-lg">Login
                     </a>
                 </div>
             </div>
