@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import StyledForm from "../styles/index.js"
+
 class Login extends Component {
     constructor(props) {
         super(props);
@@ -29,24 +31,14 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="max-w-md mx-auto flex p-6 bg-gray-100 mt-10 rounded-lg shadow-xl">
-                <form action="">
-                    <div className="px-4 pb-4">
-                        <label htmlFor="email" className="text-sm block font-bold  pb-2">EMAIL ADDRESS</label>
-                        <input type="email" name="email" id="" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300 " placeholder="Email" onChange={(e) => { this.setState({ email: e.target.value }) }} />
-                    </div>
-                    <div className="px-4 pb-4">
-                        <label htmlFor="password" className="text-sm block font-bold pb-2">PASSWORD</label>
-                        <input type="password" name="email" id="" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" placeholder="Enter your password" onChange={(e) => { this.setState({ password: e.target.value }) }} />
-                    </div>
-                    <div>
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onClick={() => this.login()}>Sign In</button>
-                    </div>
+            <StyledForm>
+                <form>
+                    <h1>Login</h1>
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Password" />
+                    <button>Sign In</button>
                 </form>
-
-
-
-            </div>
+            </StyledForm>
         );
     }
 

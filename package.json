@@ -11,7 +11,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,9 +38,11 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^10.0.0",
+    "babel-plugin-macros": "^2.8.0",
     "dotenv": "^8.2.0",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.4.6"
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.10",
+    "twin.macro": "^1.9.0"
   }
 }
