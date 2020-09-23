@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import StyledForm from "../styles/index.js"
+import StyledForm from "../../styles/index.js"
 
 class Register extends Component {
     constructor(props) {
